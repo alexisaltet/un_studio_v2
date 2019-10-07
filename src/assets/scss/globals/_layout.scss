@@ -30,14 +30,14 @@ main {
 }
 
 .portfolio_thumb {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
   // text-align: center;
   .lead {
-    // margin-top: 24px;
+    margin-top: 12px;
     // font-size: 36px;
-    line-height: 48px;
+    line-height: 36px;
     .ts {
-      top: 10px;
+      top: 4px;
     }
   }
   .small {
@@ -52,7 +52,10 @@ main {
   margin: 0 auto;
   // height: 400px;
   // width: 528px;
-  // filter: grayscale(1);git
+  // filter: grayscale(1);
+  &:hover {
+    // filter: grayscale(0);
+  }
 
   img {
     object-fit: cover;
