@@ -1,0 +1,55 @@
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    @if map-has-key($map, $key) {
+      $map: map-get($map, $key);
+    }
+    @else {
+      $moo: nth($keys, 1);
+      $rest: ();
+      $length: length($keys);
+      @for $i from 1 through $length {
+        $rest: append($rest, nth($keys, $i));
+
+      }
+      @warn "The key '#{$key}' doesn't exist. Please check your settings file.";
+    }
+  }
+  @return $map;
+}
+
+
+@function color($args...) {
+  @if length($args) > 1 {
+    $category: nth($args, 1);
+    $name: nth($args, 2);
+    @return map-deep-get($color, $category, $name);
+  }
+  @else {
+    $name: nth($args, 1);
+    @return map-get($color, $name);
+  }
+}
+
+
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}
+
+@mixin if-below($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+
+  @media screen and (max-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}
+@mixin if-above($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+
+  @media screen and (min-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}

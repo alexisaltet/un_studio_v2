@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  position: fixed;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  background: white;
+
+  .brand {
+    font-family: 'NHaasGrotesk Bold';
+    font-size: 24px;
+    text-align: center;
+    line-height: 72px;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 0;
+    span {
+      color: black;
+      position: relative;
+    }
+  }
+}
+
+
+nav {
+  display: flex;
+  position: absolute;
+  right: 45px;
+  .nav-item {
+    margin-left: 30px;
+    margin-top: spacing(base);
+    line-height: 24px;
+  }
+  .selected {
+    // color: #238854;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+  }
+}

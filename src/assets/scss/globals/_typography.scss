@@ -1,0 +1,123 @@
+// Fonts
+@font-face {
+    font-family: 'Druk Medium';
+    src: url('../fonts/Druk-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk Wide Bold';
+    src: url('../fonts/DrukTextWide-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk Heavy';
+    src: url('../fonts/Druk-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NHaasGrotesk';
+    src: url('../fonts/NHaasGroteskTXPro-55Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NHaasGrotesk';
+    src: url('../fonts/2F0FA1_0_0.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'NHaasGrotesk Bold';
+    src: url('../fonts/NHaasGroteskTXPro-75Bd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+$baseline: 24px;
+$spacing: (
+  half: $baseline / 2,
+  base:  $baseline,
+  double: $baseline * 2,
+  triple: $baseline * 3,
+  quad: $baseline * 4,
+);
+
+body {
+    font-family: 'NHaasGrotesk', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Headline
+.headline, .lead, .small {
+  .ts {
+    position: relative;
+  }
+}
+
+.ts {
+  top: 6px;
+  position: relative;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.headline {
+  font-size: 79px;
+  line-height: 84px;
+  display: inline-block;
+  vertical-align: baseline;
+  .ts {
+    top: -10px;
+  }
+}
+
+.lead {
+  font-size: 24px;
+  line-height: 36px;
+  .ts {
+    top: -2px;
+  }
+  &.copy {
+    max-width: 730px;
+  }
+  &.secondary {
+    color: #999;
+  }
+}
+.small {
+  line-height: 24px;
+  // font-size: 13px;
+  .ts {
+    top: -6px;
+    position: relative;
+  }
+}
+
+.heading .lead {
+  color: #999;
+}
+
+
+sup {
+  position: relative;
+  bottom: 1px;
+  font-size: .8em;
+  line-height: .8em;
+  vertical-align:super;
+  text-decoration:none;
+}

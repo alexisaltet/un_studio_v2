@@ -1,0 +1,104 @@
+$gutter: 30px;
+
+// G L O B A L
+//////////////////////////
+main {
+  margin-top: spacing(triple);
+  margin-bottom: 200px;
+}
+
+.container {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 0 $gutter * 1.5;
+}
+
+.header {
+  height: 72px;
+}
+
+
+// H O M E
+//////////////////////////
+.home .title {
+  max-width: 800px;
+  // margin-bottom: 6px;
+}
+.portfolio .row {
+  margin-top: 0px;
+}
+.portfolio .square {
+  width: 100%;
+  margin: 30px auto 0;
+  // height: 400px;
+  // width: 528px;
+  // filter: grayscale(1);git
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.portfolio .row .portfolio_thumb:nth-child(even) .square {
+    // margin-top: 50%;
+  }
+
+
+// P R O J E C T
+//////////////////////////
+:root {
+  --videoHeight: calc(216px - 72px);
+}
+
+.project .heading {
+  height: var(--videoHeight);
+}
+
+.project .title {
+  display: flex;
+  align-items: flex-end;
+  height: 84px;
+  .work-areas {
+    margin-bottom: 24px;
+    margin-left: 30px;
+  }
+}
+
+.project .cover {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cover-container {
+  width: 100%;
+  height: calc(100vh - 240px);
+  margin: 0 auto spacing(triple);
+  background: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  video {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+.project-txt {
+  margin: spacing(triple) auto;
+}
+.project-img-container {
+  // height: 768px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: spacing(triple) auto;
+}
+.project-img {
+  height: 768px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 45px;
+}
