@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grid CSS | Testing</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script> -->
 
 </head>
 
 <body>
 
 
-  <div id="dummyGrid" class="dummy-grid" style="display:none;">
+  <!-- <div id="dummyGrid" class="dummy-grid" style="display:none;">
     <div class="container">
       <div class="row">
         <div class="col-md-1">&nbsp;</div>
@@ -31,7 +32,7 @@
         <div class="col-md-1">&nbsp;</div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <header>
@@ -48,7 +49,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="lead"><span class="ts">Bonjour</span></p>
+            <p class="lead"><span class="ts">bonjour</span></p>
             <div class="title">
               <h1 class="headline"><span class="ts">un studio est une  agence de <span class="italic">création!</span></h1>
             </div>
@@ -60,45 +61,117 @@
     <section class="portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/ilu-logo.svg" alt="">
-              <!-- <p class="lead"><span class="ts">Illustre</span></p> -->
-              <p class="lead"><span class="ts">Client: Illustre, 2018 <br><span class="">Architecture, Agencement, Identité visuelle</span></span></p>
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/mar-logo.svg" alt="">
-              <p class="lead"><span class="ts">Les Maréchaux</span></p>
-              <p class="small italic"><span class="ts">Architecture, Agencement, Identité visuelle</span></p>
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/epi-logo.svg" alt="">
-              <p class="lead"><span class="ts">Epicurius</span></p>
-              <p class="small italic"><span class="ts">Architecture, Agencement, Identité visuelle</span></p>
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/pa-logo.svg" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/lai-logo.svg" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-0 portfolio_thumb">
-            <div class="square">
-              <img src="../assets/img/thumb/ora-logo.svg" alt="">
-            </div>
-          </div>
+          <div class="col-md-4 offset-md-0">
+            <a href="template_2.html" class="portfolio_thumb">
+                <div class="square">
+                    <img class="cover2 gs" src="../assets/img/thumb/illustre-cover.jpg" alt="">
+                    <!-- <img class="cover2" src="../assets/img/thumb/illustre-cover2.jpg" alt=""> -->
+                    <img class="logo gs" src="../assets/img/thumb/ilu-logo.svg" alt="">
+                    <img class="photo" src="../assets/img/thumb/ilu-logo.svg" alt="">
+                </div>
 
+              <span class="portfolio_thumb_title">
+                <p class="small">
+                  <span class="ts">Illustre → Bar à vin, 2018</span>
+                </p>
+                <p class="lead">
+                  <span class="ts"> Architecture, agencement et identité visuelle</span>
+                </p>
+              </span>
+            </a><!-- end portfolio_thumb -->
+          </div> <!-- end col -->
 
-        </div>
+          <div class="col-md-4 offset-md-0">
+            <a class="portfolio_thumb">
+              <span class="square">
+                <img class="cover2" src="../assets/img/thumb/marechaux-cover.jpg" alt="">
+                <img class="photo" src="../assets/img/thumb/marechaux-cover2.jpg" alt="">
+                <img class="logo" src="../assets/img/thumb/mar-logo.svg" alt="">
+              </span>
+              <span class="portfolio_thumb_title">
+                <p class="small">
+                  <span class="ts">Les Maréchaux → Bistrot, 2018</span>
+                </p>
+                <p class="lead">
+                  <span class="ts">
+                    Architecture, agencement et identité visuelle</span>
+                </p>
+              </span>
+            </a><!-- end portfolio_thumb -->
+          </div><!-- end col -->
+
+          <div class="col-md-4 offset-md-0">
+            <a href="" class="portfolio_thumb">
+              <span class="square">
+                <img class="logo" src="../assets/img/thumb/epi-logo.svg" alt="">
+                <img class="cover2" src="../assets/img/thumb/epicurius-cover.jpg" alt="">
+                <img class="photo" src="../assets/img/thumb/epicurius-cover2.jpg" alt="">
+              </span>
+                <span class="portfolio_thumb_title">
+                  <p class="small">
+                    <span class="ts">Epicurius → Restaurant, 2018</span>
+                  </p>
+                  <p class="lead">
+                    <span class="ts">Architecture, agencement et identité visuelle</span>
+                  </p>
+                </span>
+            </a><!-- end portfolio_thumb -->
+          </div><!-- end col -->
+
+          <div class="col-md-4 offset-md-0">
+            <a href="#" class="portfolio_thumb">
+              <span class="square">
+                <img class="cover2" src="../assets/img/thumb/pa-logo.svg" alt="">
+                <img class="photo" src="../assets/img/thumb/patek-cover.jpg" alt="">
+                <!-- <img class="cover2 gs" src="../assets/img/thumb/patek-cover2.jpg" alt=""> -->
+              </span>
+              <span class="portfolio_thumb_title">
+                <p class="small">
+                  <span class="ts">Patek Philippe → Horlogerie de luxe, 2016</span>
+                </p>
+                <p class="lead">
+                  <span class="ts"> Scénographie et vitrines</span>
+                </p>
+              </span>
+            </a><!-- end portfolio_thumb -->
+          </div><!-- end col -->
+
+          <div class="col-md-4 offset-md-0">
+            <a href="#" class="portfolio_thumb">
+              <span class="square">
+                <img class="cover2" src="../assets/img/thumb/lai-logo.svg" alt="">
+                <img class="photo" src="../assets/img/thumb/laiterie-cover.jpg" alt="">
+                <!-- <img class="" src="../assets/img/thumb/laiterie-cover2.jpg" alt=""> -->
+              </span>
+              <span class="portfolio_thumb_title">
+                <p class="small">
+                  <span class="ts">Laiterie des marches → Fromager, 2015</span>
+                </p>
+                <p class="lead">
+                  <span class="ts">Branding, Stratégie</span>
+                </p>
+              </span>
+            </a><!-- end portfolio_thumb -->
+          </div><!-- end col -->
+
+          <div class="col-md-4 offset-md-0">
+            <a href="#" class="portfolio_thumb">
+              <span class="square">
+                <img class="logo" src="../assets/img/thumb/ora-logo.svg" alt="">
+                <img class="photo gs" src="../assets/img/thumb/orangerie-cover3.jpg" alt="">
+                <img class="cover2 gs" src="../assets/img/thumb/orangerie-cover2.jpg" alt="">
+              </span>
+              <span class="portfolio_thumb_title">
+                <p class="small">
+                  <span class="ts">L'Orangerie → Restaurant, 2014</span>
+                </p>
+                <p class="lead">
+                  <span class="ts">Architecture, Agencement, Identité visuelle</span>
+                </p>
+              </span>
+            </a><!-- end portfolio_thumb -->
+          </div><!-- end col -->
+        </div><!-- end row -->
       </div>
     </section>
   </main>
@@ -109,6 +182,7 @@
 
 
 <script type="text/javascript">
+
 
   function resize() {
     const element = document.querySelector('.square');
@@ -137,19 +211,18 @@
 </script>
 
 
-
 <script>
-    $(function() {
-      $(window).on("keyup", function(e) {
-        if (e.which == 87)
-        $('#dummyGrid').toggle();
-        $('html').toggleClass('baselines');
-        $('.headline').toggleClass('highlight');
-        // $('.header').toggleClass('borderBottom');
-        // $('.project-header').toggleClass('highlight');
-        // $('h1, h2, h3, p, a').toggleClass('highlight');
-      });
-    });
+    // $(function() {
+    //   $(window).on("keyup", function(e) {
+    //     if (e.which == 87)
+    //     $('#dummyGrid').toggle();
+    //     $('html').toggleClass('baselines');
+    //     $('.headline').toggleClass('highlight');
+    //   });
+    // });
+
+
+
 </script>
 
 

@@ -30,9 +30,9 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'NHaasGrotesk Bold';
+    font-family: 'NHaasGrotesk';
     src: url('../fonts/NHaasGroteskTXPro-75Bd.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -76,8 +76,16 @@ body {
   font-style: italic;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .secondary {
   color: #666;
+}
+
+.gs {
+  filter: grayscale(100);
 }
 
 .headline {
@@ -93,6 +101,7 @@ body {
 .lead {
   font-size: 24px;
   line-height: 36px;
+
   .ts {
     top: -2px;
   }
@@ -113,7 +122,7 @@ body {
 }
 
 .heading .lead {
-  color: #999;
+  // color: #999;
 }
 
 

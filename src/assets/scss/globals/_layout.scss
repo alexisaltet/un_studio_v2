@@ -26,47 +26,124 @@ main {
   margin-bottom: 6px;
 }
 .portfolio .row {
-  margin-top: 24px;
+  margin-top: 60px;
+}
+
+
+.square {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  // overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    &.gs {
+      // filter: grayscale(100);
+
+    }
+  }
+}
+
+.square {
+  // position: relative;
+  display: flex;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+  }
+  .cover2, .logo {
+    // right: 100%;
+    z-index: 1;
+    opacity: 0;
+  }
+  &:hover {
+    .cover2 {
+      opacity: 1;
+      // right: 0%;
+    }
+  }
+
+}
+
+
+
+.portfolio_thumb {
+  position: relative;
+  // border: 1px solid blue;
+  overflow: hidden;
+  &_title {
+    bottom: 0px;
+    padding-bottom: 24px;
+    position: absolute;
+    z-index: 10;
+    padding-left: 24px;
+    color: black;
+    background: white;
+    transition: all .5s ease;
+    margin: 15px;
+    width: calc(100% - 30px;)!important;
+    opacity: 0;
+    z-index: 100;
+  }
+  &:hover {
+    .portfolio_thumb_title {
+      opacity: 1;
+
+    }
+    .logo {
+      // opacity: 0;
+    }
+    .photo {
+      // opacity: 1;
+    }
+  }
 }
 
 .portfolio_thumb {
-  margin-bottom: 200px;
-  // text-align: center;
-  .lead {
-    margin-top: 12px;
-    // font-size: 36px;
-    line-height: 36px;
-    .ts {
-      top: 4px;
-    }
-  }
-  .small {
-    // color: #666;
-    .ts {
-      top: 0;
-    }
-  }
-}
-.portfolio .square {
-  width: 100%;
-  margin: 0 auto;
-  // height: 400px;
-  // width: 528px;
-  // filter: grayscale(1);
-  &:hover {
-    // filter: grayscale(0);
-  }
+  cursor: pointer;
+  display: block;
+  // max-width: 50s0px;
+  margin: 0 auto 30px;
+  // overflow: hidden;
 
-  img {
-    object-fit: cover;
+
+
+  &_title {
+    // padding-left: 15px;
+    display: inline-block;
+    // opacity: 0;
     width: 100%;
-    height: 100%;
+    padding-top: 12px;
+    .small {
+      display: block;
+      line-height: 24px;
+      margin-top: 0;
+      height: 24px;
+      // background: rgba(255,182,193 ,0.5);
+      // border-bottom: 2px solid;
+      .ts {
+        top: 6px;
+      }
+    }
+    .lead {
+      // background: rgba(255,182,193 ,0.5);
+      display: block;
+      .ts {
+        top: 10px;
+      }
+    }
   }
 }
 
-.portfolio .row .portfolio_thumb:nth-child(even) .square {
-    // margin-top: 50%;
-  }
+
+
+
 
 
 // P R O J E C T

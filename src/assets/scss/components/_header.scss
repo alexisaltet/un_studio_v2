@@ -8,9 +8,10 @@ header {
   z-index: 100;
   top: 0;
   background: white;
+  // @include box-shadow;
 
   .brand {
-    font-family: 'NHaasGrotesk Bold';
+    // font-weight: bold;
     font-size: 24px;
     text-align: center;
     line-height: 72px;
@@ -19,24 +20,48 @@ header {
     padding-left: 0;
     span {
       color: black;
+      // color: #ff0000;
+      // color: darkblue;
+      // color: FireBrick;
+      // color: #238854;
+      // color: grey;
       position: relative;
     }
   }
 }
 
+.green {
+  color:#238854;
+}
+.blue {
+  color:darkblue;
+}
 
 nav {
   display: flex;
   position: absolute;
   right: 45px;
   .nav-item {
-    margin-left: 30px;
+    margin-left: 45px;
     margin-top: spacing(base);
     line-height: 24px;
+    // color: darkblue;
   }
   .selected {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 11px;
+      left: -20px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      // background: darkblue;
+      background: black;
+    }
     // color: #238854;
-    border-bottom: 2px solid;
-    padding-bottom: 2px;
+    // border-bottom: 2px solid;
+    // padding-bottom: 2px;
   }
 }
