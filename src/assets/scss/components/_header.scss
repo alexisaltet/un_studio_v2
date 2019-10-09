@@ -1,14 +1,22 @@
 header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
   justify-content: center;
   z-index: 100;
   top: 0;
+  // background: white;
+  padding-top: 36px;
+  transition: all .3s ease;
+  position: fixed;
   background: white;
-  // @include box-shadow;
+  &.fade-in {
+    padding-top: 0;
+    // @include box-shadow;
+    // border-bottom: 1px solid;
+  }
 
   .brand {
     // font-weight: bold;
@@ -45,20 +53,26 @@ nav {
     margin-left: 45px;
     margin-top: spacing(base);
     line-height: 24px;
+    color: #888;
+    cursor: pointer;
     // color: darkblue;
+    &:hover {
+      color: black;
+    }
   }
   .selected {
+    color: black;
     position: relative;
     &:before {
-      position: absolute;
-      content: "";
-      top: 11px;
-      left: -20px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
+      // position: absolute;
+      // content: "";
+      // top: 11px;
+      // left: -20px;
+      // width: 8px;
+      // height: 8px;
+      // border-radius: 50%;
       // background: darkblue;
-      background: black;
+      // background: black;
     }
     // color: #238854;
     // border-bottom: 2px solid;
